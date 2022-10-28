@@ -14,8 +14,10 @@ git clone https://github.com/chameleon-lizard/Levenstein.git
 ```
 sudo docker build -t docker-lev .
 ```  
-3. Run docker
-` sudo docker run docker-lev Recursive <arg> <arg> `
+3. Run docker and please change `your_path`
+```
+sudo docker run docker-lev Recursive <your_path> ubuntu22.04
+```
 4. Run `make all` to build the program, and to run tests, use `make test && ./test_build/test`
 ```
 make all
