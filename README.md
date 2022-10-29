@@ -14,7 +14,7 @@ git clone https://github.com/chameleon-lizard/Levenstein.git
 <br />2 options to run the program: *with Docker* and *without Docker*
 3. Test the program
 
-**How to build the program with Docker**
+###How to build the program with Dock###
 ---
 1. Build Docker image 
 ```
@@ -28,8 +28,7 @@ docker run docker-lev {Recursive, Iterative} string_a string_b
 ```
 make all
 ```
-
-**How to build the program without Docker**
+###How to build the program without Docker###
 ---
 1. Run `make all`
 ```
