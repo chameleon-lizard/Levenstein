@@ -41,7 +41,6 @@ make all
 ```
 ---
 **How to test the program**
-
 <br />Run the following commands to test the program
 ```
 make test && ./test_build/test
