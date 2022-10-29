@@ -1,5 +1,5 @@
-#include <string.h>
-#include <stdio.h>
+#include <cstring>
+#include <cstdio>
 
 // min(a, b, c) <-> min(a, min(b, c))
 int min(int a, int b, int c)
@@ -93,29 +93,3 @@ int levenshtein_wagner_fisher(char *needle, char *haystack)
     return result;
 }
 
-
-/*
-    Params:
-        - Name of function (e.g. "Recursive" or "Iterative");
-        - Needle;
-        - Haystack;
-*/
-int main(int argc, char *argv[])
-{
-    if (argc != 4)
-    {
-        printf("Not enough params.\n");
-        return 1;
-    }
-
-    if (strncmp(argv[1], "Recursive", strlen("Recursive")) == 0)
-    {
-        printf("Distance: %d\n", levenshtein_recursive(argv[2], argv[3]));
-    }
-    else
-    {
-        printf("Distance: %d\n", levenshtein_wagner_fisher(argv[2], argv[3]));
-    }
-
-    return 0;
-}
