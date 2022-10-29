@@ -47,5 +47,9 @@ make test && ./test_build/test
 ```
 
 ## Development
-How to modify project
-1. xxx
+The source code is separated into three files. 
+- In the `main.cpp` file, there is the code for launching application and parsing command line arguments.
+- In the `levenstein.h` file, there are defines of the functions used in the library — both the naive and wagner_fisher implementation of the Levenstein Distance calculation algorythm.
+- In the `levenstein.cpp` file, we can find source code for the library functions.
+
+To add functionality to the application, you should first write a new function inside the `levenstein.cpp` file, then add the header of the function to the `levenstein.h` file. To test if it works, you may use the `main.cpp` file, add the new function call, and start working with it right away. Alternatively, you can import the `levenstein.h` library to another project and use the functions there.
