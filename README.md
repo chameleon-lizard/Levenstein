@@ -15,6 +15,7 @@ git clone https://github.com/chameleon-lizard/Levenstein.git
 3. Test the program
 
 **How to build the program with Docker**
+---
 1. Build Docker image 
 ```
 sudo docker build -t docker-lev .
@@ -29,6 +30,7 @@ make all
 ```
 
 **How to build the program without Docker**
+---
 1. Run `make all`
 ```
 make all
@@ -38,6 +40,7 @@ make all
 ./build/levenshtein {Recursive, Iterative} string_a string_b
 ```
 **How to test the program**
+---
 <br />Run the following commands to test the program
 ```
 make test && ./test_build/test
