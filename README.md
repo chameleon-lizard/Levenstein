@@ -5,10 +5,15 @@ Final project, Skoltech, 2022
 Levenshtein distance is a string metric used to compare two sequences. We propose the levenstein C++ program and software development.
 
 ## Quickstart 
-Let start with cloning the repository 
+There are 3 main steps to build and test the program.
+1. Clone the repository
 ``` 
 git clone https://github.com/chameleon-lizard/Levenstein.git
 ```
+2. Build the program
+<br />2 options to run the program: *with Docker* and *without Docker*
+3. Test the program
+<br />
 **How to build the program with Docker**
 1. Build Docker image 
 ```
@@ -22,17 +27,18 @@ docker run docker-lev {Recursive, Iterative} string_a string_b
 ```
 make all
 ```
+<br />
 **How to build the program without Docker**
 1. Run `make all`
 ```
 make all
 ```
-2. Build the program
+2. Build the program and please change the strings to compare 
 ```
 ./build/levenshtein {Recursive, Iterative} string_a string_b
 ```
 **How to test the program**
-Run the following commands to test the program
+<br />Run the following commands to test the program
 ```
 make test && ./test_build/test
 ```
