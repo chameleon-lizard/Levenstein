@@ -18,22 +18,24 @@ sudo docker build -t docker-lev .
 ```
 docker run docker-lev {Recursive, Iterative} string_a string_b
 ```
-3. Run `make all` to build the program, and to run tests, use `make test && ./test_build/test`
+3. Run `make all` to build the program
 ```
 make all
-make test && ./test_build/test
 ```
 **How to build the program without Docker**
 1. Run `make all`
 ```
 make all
 ```
-3. Build the program
+2. Build the program
 ```
 ./build/levenshtein {Recursive, Iterative} string_a string_b
 ```
-
-
+**How to test the program**
+Run the following commands to test the program
+```
+make test && ./test_build/test
+```
 
 ## Development
 How to modify project
