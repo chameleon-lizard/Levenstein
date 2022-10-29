@@ -15,7 +15,7 @@ git clone https://github.com/chameleon-lizard/Levenstein.git
 3. Test the program
 ---
 
-**How to build the program with Dock**
+**How to build the program with Docker**
 1. Build Docker image 
 ```
 sudo docker build -t docker-lev .
