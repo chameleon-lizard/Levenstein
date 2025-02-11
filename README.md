@@ -1,5 +1,5 @@
 # Foundations of Software Engineering
-Final project, Skoltech, 2022
+Final project, 2022
 
 ## Levenstein
 Levenshtein distance is a string metric used to compare two sequences. We propose the levenstein C++ program and software development.
